@@ -12,10 +12,9 @@ public class JokesServiceImpl implements JokesService {
 
     private  final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokesServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokesServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
-
 
     @Override
     public String getJoke() {
